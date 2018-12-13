@@ -1,0 +1,47 @@
+div h1 {
+    font-family: "Dokdo", cursive;
+    font-size: 80px;
+    color: yellow;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: center;
+}
+
+html{
+    background-image: url(https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/40142_pokemon.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1);
+    background-color: rgba(10, 10, 10, 0.3);
+    background-blend-mode: soft-light;
+    margin: 0;
+    padding: 0;
+  
+}
+
+#header{
+    margin: auto;
+    width: 500px;
+    font-family: "Dokdo", cursive;
+}
+
+ul li{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: black;
+    color: yellow;
+    text-decoration:none; 
+    padding: 10px 15px;
+    display:block;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li a:hover{
+    background-color: gray;
+}

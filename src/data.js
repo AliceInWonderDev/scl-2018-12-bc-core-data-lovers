@@ -1,5 +1,9 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+const allpokemon = () =>{
+  let pokenames = document.getElementsById("id")
+  console.log(pokenames(0))
+}
+
+
 
 const example = () => {
   return 'example';
