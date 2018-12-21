@@ -45,3 +45,38 @@ ul li{
 .nav li a:hover{
     background-color: gray;
 }
+
+.pokemonItem{
+    padding: 20px;
+    border: 2px solid #ffffff;
+    margin-bottom: 5px;
+
+    
+}
+
+.pokemonItem span.pokemonName{
+    padding: 10px;
+    align-self: center;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.pokemonNum{
+    text-align: center;
+    text-decoration-color: #ffffff;
+
+}
+iframe {
+margin-top: 20px;
+margin-bottom: 30px;
+-moz-border-radius: 12px;
+-webkit-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 4px 4px 14px #000;
+-webkit-box-shadow: 4px 4px 14px #000;
+box-shadow: 4px 4px 14px #000;
+filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+}
