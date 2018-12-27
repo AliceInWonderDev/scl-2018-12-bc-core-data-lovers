@@ -5,6 +5,13 @@ div h1 {
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     text-align: center;
 }
+div p {
+    font-family: "Dokdo", cursive;
+    font-size: 25px;
+    color: yellow;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: center;
+}
 
 html{
     background-image: url(https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/40142_pokemon.jpg);
@@ -69,14 +76,53 @@ ul li{
     text-decoration-color: #ffffff;
 
 }
-iframe {
-margin-top: 20px;
-margin-bottom: 30px;
--moz-border-radius: 12px;
--webkit-border-radius: 12px;
-border-radius: 12px;
--moz-box-shadow: 4px 4px 14px #000;
--webkit-box-shadow: 4px 4px 14px #000;
-box-shadow: 4px 4px 14px #000;
-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+#videos .video{
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 10px;
+    height: 0;
+
 }
+ #videos .video iframe{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+ }
+
+@media (max-width: 1400px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+  }
+  @media (max-width: 600px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+  }
+  @media (max-width: 768px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+  }
+  @media (max-width: 992px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+  }
+  @media (max-width: 1200px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+  }
