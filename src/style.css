@@ -26,6 +26,10 @@ html{
     padding: 0;
   
 }
+#poke-of-the-day{
+    position: relative;
+    margin: auto;
+}
 
 #header{
     margin: auto;
@@ -38,7 +42,7 @@ ul li{
 }
 
 .nav li a{
-    background-color: black;
+    background-color: #000;
     color: yellow;
     text-decoration:none; 
     padding: 10px 15px;
@@ -76,6 +80,19 @@ ul li{
     text-decoration-color: #ffffff;
 
 }
+.inputSearch{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+.giphy-embed{
+    position: relative;
+    margin: auto;
+    border: 0px;
+    padding: 0%;
+
+}
+
 #videos .video{
     position: relative;
     padding-bottom: 25%;
@@ -97,6 +114,16 @@ ul li{
         width: 25%;
         float: left;
     }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+    .giphy-embed{
+        display: block;
+        width: 50%;
+        height: 50%;   
+    }
   }
   @media (max-width: 600px) {
     #videos .video{
@@ -104,6 +131,17 @@ ul li{
         width: 25%;
         float: left;
     }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+  }
+  .giphy-embed{
+    display: block;
+    width: 50%;
+    height: 50%;
+}
   }
   @media (max-width: 768px) {
     #videos .video{
@@ -111,6 +149,17 @@ ul li{
         width: 25%;
         float: left;
     }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+  }
+  .giphy-embed{
+    display: block;
+    width: 50%;
+    height: 50%; 
+}
   }
   @media (max-width: 992px) {
     #videos .video{
@@ -118,6 +167,17 @@ ul li{
         width: 25%;
         float: left;
     }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+  }
+  .giphy-embed{
+    display: block;
+    width: 50%;
+    height: 50%; 
+}
   }
   @media (max-width: 1200px) {
     #videos .video{
@@ -125,4 +185,15 @@ ul li{
         width: 25%;
         float: left;
     }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+  }
+  .giphy-embed{
+    display: block;
+    width: 50%;
+    height: 50%;
+}
   }
