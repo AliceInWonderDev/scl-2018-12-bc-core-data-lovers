@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>POKEBUSQUEDA</title>
-    <link rel="stylesheet" href="style.css" />
-    <link type="image/x-icon" rel="icon" href="favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
-</head>
-<body>
-        <div>
-            <h1>POKEFAN LOVERS</h1>
-            <div id="header">
-                <ul class="nav">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pokebusqueda.html">PokeBusqueda</a></li>
-                    <li><a href="poketube.html">PokeTube</a></li>
-                    <li><a href="funfacts.html">Pokedatos</a></li>
-                </ul>
-            </div>
-        </div> 
-        <div class = "clear"></div>
-
-        <div id= "pokemonList"> 
-        </div>
-    <div id="root"></div>
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>     
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>POKEBUSQUEDA</title>
+      <link rel="stylesheet" href="style.css" />
+      <link type="image/x-icon" rel="icon" href="favicon.ico"/>
+      <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+   </head>
+   <body>
+      <div>
+         <h1>POKEFAN LOVERS</h1>
+         <div id="header">
+            <ul class="nav">
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="pokebusqueda.html">PokeBusqueda</a></li>
+               <li><a href="poketube.html">PokeTube</a></li>
+               <li><a href="funfacts.html">Pokedatos</a></li>
+            </ul>
+         </div>
+      </div>
+      <input type="text" name="searchPokemon" id="searchPokemon" class="inputSearch" placeholder="Type the name of a Pokemon" onkeyup="searchPokemonByName()"></input>      <div class = "clear"></div>
+      <div class = "clear"></div>
+      <div id= "pokemonList"></div>
+      <div id="root"></div>
+      <script src="./data/pokemon/pokemon.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>     
+   </body>
 </html>
