@@ -6,6 +6,7 @@ function loadAllPokemon(){
   renderPokemonListInView(allPokemon);
 }
 
+//función del filtro
 function searchPokemonByName(){
   const text = document.getElementById("searchPokemon");
   if(text.value.length > 0){
@@ -14,10 +15,20 @@ function searchPokemonByName(){
  pokemon => pokemon.name.toUpperCase().includes(text.value.toUpperCase())
  ); 
  renderPokemonListInView(searchList);
+//Otro filtro para numeros 
+ const searchNum = pokemon["pokemon"].filter()
+ pokemon => pokemon.num.toUpperCase().includes(text.value.toUpperCase());
+ renderPokemonListInView(searchNum);
+
   }else if(text.value.length == 0){
     loadAllPokemon();
   }
 }  
+
+
+
+
+
 
 function renderPokemonListInView(allPokemon){
   let pokemonListContainer = document.getElementById("pokemonList");
@@ -27,6 +38,7 @@ function renderPokemonListInView(allPokemon){
   allPokemon.forEach(pokemon =>{
     let parent = document.createElement("div");
     parent.className = "pokemonItem"
+    
  //image
   //creamos un elemento IMG (porque es una imagen) y la metemos en la variable pokemonImage
   let pokemonImage = document.createElement("img");
