@@ -58,9 +58,10 @@ ul li{
 }
 
 .pokemonItem{
-    padding: 20px;
+    padding: 10px;
     border: 2px solid #ffffff;
     margin-bottom: 5px;
+    position: relative;
 
     
 }
@@ -77,123 +78,138 @@ ul li{
 
 .pokemonNum{
     text-align: center;
-    text-decoration-color: #ffffff;
+    
 
 }
 .inputSearch{
-    width: 90%;
+    position: relative;
     padding: 10px;
     margin: 10px;
-}
-.giphy-embed{
-    position: relative;
-    margin: auto;
-    border: 0px;
-    padding: 0%;
-
 }
 
 #videos .video{
     position: relative;
-    padding-bottom: 25%;
-    padding-top: 10px;
-    height: 0;
 
 }
- #videos .video iframe{
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
- }
 
 @media (max-width: 1400px) {
     #videos .video{
         display: block;
         width: 25%;
         float: left;
+        margin: auto;
     }
     #poke-of-the-day{
         display: block;
         width: 50%;
         float: center;
     }
-    .giphy-embed{
-        display: block;
-        width: 50%;
-        height: 50%;   
-    }
-  }
-  @media (max-width: 600px) {
-    #videos .video{
+    .inputSearch{
         display: block;
         width: 25%;
         float: left;
     }
-    #poke-of-the-day{
+    .pokemonItem{
         display: block;
-        width: 50%;
-        float: center;
+        width: 25%;
+        height: 25%;
+        float: left;
     }
-  }
-  .giphy-embed{
-    display: block;
-    width: 50%;
-    height: 50%;
 }
-  }
-  @media (max-width: 768px) {
+
+@media (max-width: 600px) {
     #videos .video{
         display: block;
         width: 25%;
         float: left;
+        margin: auto;
     }
     #poke-of-the-day{
         display: block;
         width: 50%;
         float: center;
     }
-  }
-  .giphy-embed{
-    display: block;
-    width: 50%;
-    height: 50%; 
-}
-  }
-  @media (max-width: 992px) {
-    #videos .video{
+    .inputSearch{
         display: block;
         width: 25%;
         float: left;
     }
-    #poke-of-the-day{
+    .pokemonItem{
         display: block;
-        width: 50%;
-        float: center;
+        width: 25%;
+        height: 25%;
+        float: left;
     }
-  }
-  .giphy-embed{
-    display: block;
-    width: 50%;
-    height: 50%; 
 }
-  }
-  @media (max-width: 1200px) {
+@media (max-width: 768px) {
     #videos .video{
         display: block;
         width: 25%;
         float: left;
+        margin: auto;
     }
     #poke-of-the-day{
         display: block;
         width: 50%;
         float: center;
     }
-  }
-  .giphy-embed{
-    display: block;
-    width: 50%;
-    height: 50%;
+    .inputSearch{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+    .pokemonItem{
+        display: block;
+        width: 25%;
+        height: 25%;
+        float: left;
+    }
 }
-  }
+@media (max-width: 992px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+        margin: auto;
+    }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+    .inputSearch{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+    .pokemonItem{
+        display: block;
+        width: 25%;
+        height: 25%;
+        float: left;
+    }
+}
+@media (max-width: 1200px) {
+    #videos .video{
+        display: block;
+        width: 25%;
+        float: left;
+        margin: auto;
+    }
+    #poke-of-the-day{
+        display: block;
+        width: 50%;
+        float: center;
+    }
+    .inputSearch{
+        display: block;
+        width: 25%;
+        float: left;
+    }
+    .pokemonItem{
+        display: block;
+        width: 25%;
+        height: 25%;
+        float: left;
+    }
+}
