@@ -15,21 +15,12 @@ function searchPokemonByName(){
  pokemon => pokemon.name.toUpperCase().includes(text.value.toUpperCase())
  ); 
  renderPokemonListInView(searchList);
-//Otro filtro para numeros 
- const searchNum = pokemon["pokemon"].filter()
- pokemon => pokemon.num.toUpperCase().includes(text.value.toUpperCase());
- renderPokemonListInView(searchNum);
-
-  }else if(text.value.length == 0){
-    loadAllPokemon();
+  }else if(text.value.length === 0 && num.value.length !== ""){
+    loadAllPokemon();    
   }
-}  
+}
 
-
-
-
-
-
+//función que carga la lista de todos los pokemones
 function renderPokemonListInView(allPokemon){
   let pokemonListContainer = document.getElementById("pokemonList");
   pokemonListContainer.innerHTML= "";
@@ -89,6 +80,33 @@ if( counter == allPokemon.length){
   }
   });
 }
+
+
+
+
+
+/*/ función que ordena
+sortPokemonBy(data, sortBy, sortOrder) => {
+  let pokeSort = data;
+  pokeSort.sort((a,b) => {
+    if (sortBy === "key" && sortOrder === "ascending"){
+      console.log(pokeSort)
+    }
+  })
+}
+document.getElementById("sortPokemon").innerHTML = pokemon["pokemon"];
+function sortPokemonBy(){
+  pokemon["pokemon"].sort();
+  document.getElementById("sortPokemon").innerHTML = pokemon["pokemon"];
+}
+function sortPokemonBy(){
+  var numbers = pokemon["pokemon"].num
+  numbers.sort(function(a,b){
+    return a-b
+  });
+}*/
+
+
 
 function createClear() {
   let clear = document.createElement("div");
