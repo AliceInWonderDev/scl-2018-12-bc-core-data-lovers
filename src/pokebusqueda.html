@@ -21,10 +21,47 @@
             </ul>
          </div>
       </div>
-      <input type="text" name="searchPokemon" id="searchPokemon" class="inputSearch" placeholder="Type the name of a Pokemon" onkeyup="searchPokemonByName()"></input>      <div class = "clear"></div>
+      <br>
+      <br>
+      <div>
+        <input type="text" name="searchPokemon" id="searchPokemon" class="inputSearch" placeholder="Type the name of a Pokemon" onkeyup="searchPokemonByName()"></input>
+      </div>
+      <div>
+        <input type="text" name="searchPokemon" id="sortPokemon" class="inputSearch" placeholder="Ordenar por" onclick="sortPokemonBy()"></input> 
+    </div>
+
+<!--filtrado
+<section class = "container">
+   <p>filtrar por:</p>
+   <select id="filterOptions">
+      <option value="0">Selecciona</option>
+      <option value ="number">Número</option>
+      <option value ="names">Nombres</option>
+      <option value ="types">Tipo</option>
+   </select>
+</section>
+-->
+<!-- como quiero que se vea
+
+       <section class = "mainContainer">
+         <div class = "card">
+            <div class = "box">
+               <div class = "img">
+                  <img src = "${element.image}">    
+               </div>
+         <h2>001
+            <br>
+            <h1>Pikachu
+            <br>
+            <span>Tipo: Agua, Fuego</span>
+         </h2>
+            </div>
+         </div>
+      </section>
+-->
       <div class = "clear"></div>
       <div id= "pokemonList"></div>
-      <div id="root"></div>
+      <section id="root" class="mainContainer"></section>
       <script src="./data/pokemon/pokemon.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>     
