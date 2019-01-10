@@ -5,69 +5,49 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>POKEBUSQUEDA</title>
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link type="image/x-icon" rel="icon" href="favicon.ico"/>
       <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" />
    </head>
    <body>
-      <div>
-         <h1>POKEFAN LOVERS</h1>
-         <div id="header">
-            <ul class="nav">
-               <li><a href="index.html">Inicio</a></li>
-               <li><a href="pokebusqueda.html">PokeBusqueda</a></li>
-               <li><a href="poketube.html">PokeTube</a></li>
-               <li><a href="funfacts.html">Pokedatos</a></li>
-            </ul>
-         </div>
-      </div>
-      <br>
-      <br>
-      <div>
-         <ul>
-        <input type="text" name="searchPokemon" id="searchPokemon" class="inputSearch" placeholder="Escribe el nombre o número de tu Pokemón favorito" onkeyup="searchPokemonByName()"></input>
-      </ul>
-      </div>
-      <div>
-            <ul>
-        <input type="text" name="searchPokemon" id="sortPokemon" class="inputSearch" placeholder="Ordenar de la A a la Z" onclick="sortPokemonBy()"></input> 
-      </ul>
-    </div>
-
-<!--filtrado
-<section class = "container">
-   <p>filtrar por:</p>
-   <select id="filterOptions">
-      <option value="0">Selecciona</option>
-      <option value ="number">Número</option>
-      <option value ="names">Nombres</option>
-      <option value ="types">Tipo</option>
-   </select>
-</section>
--->
-<!-- como quiero que se vea
-
-       <section class = "mainContainer">
-         <div class = "card">
-            <div class = "box">
-               <div class = "img">
-                  <img src = "${element.image}">    
+      <div class="container-fluid">
+         <div class="container">
+            <div class="row titulo">
+               <div class="col">
+                  <h1>POKEFAN LOVERS</h1>
                </div>
-         <h2>001
-            <br>
-            <h1>Pikachu
-            <br>
-            <span>Tipo: Agua, Fuego</span>
-         </h2>
+            </div>
+            <div id="header">
+               <div class="row nav">
+                  <div class="col"><a href="inicio.html">Inicio</a></div>
+                  <div class="col"><a href="pokebusqueda.html">PokeBusqueda</a></div>
+                  <div class="col"><a href="poketube.html">PokeTube</a></div>
+                  <div class="col"><a href="funfacts.html">Pokedatos</a></div>
+               </div>
             </div>
          </div>
+      <section>
+      <div class="row buttons">
+         <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
+               <input type="text" name="searchPokemon" id="searchPokemon" class="btn btn-secondary btn-lg button1" placeholder="Escribe el nombre/número de tu Pokemón" onkeyup="searchPokemonByName()"></input>
+         </div>
+         <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
+               <input type="submit" id="myCheck" name="orderBy" class="btn btn-secondary btn-lg button2" value="Ordenar A-Z" onclick="sortPokemonBy()"></input>
+         </div>
+      </div>
+      
       </section>
--->
+      </div>
       <div class = "clear"></div>
       <div id= "pokemonList"></div>
       <section id="root" class="mainContainer"></section>
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
       <script src="./data/pokemon/pokemon.js"></script>
       <script src="data.js"></script>
-      <script src="main.js"></script>     
+      <script src="main.js"></script> 
    </body>
 </html>
