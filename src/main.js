@@ -5,31 +5,17 @@ function loadAllPokemon(){
   renderPokemonListInView(allPokemon);
 }
 
-//función del filtro
-function searchPokemonByName(){
-  const text = document.getElementById("searchPokemon");
-  if( text.value.length > 0 ){
-    //Aplicamos un filtro con una condición para crear un nuevo array
-    const searchList = pokemon["pokemon"].filter(
-        pokemon => 
-        pokemon.name.toUpperCase().includes(text.value.toUpperCase()) || 
-        pokemon.num.includes(text.value) // ||
-        // pokemon.type.toUpperCase().includes( text.value.toUpperCase() )
-    ); 
-    console.log("searchList "+searchList.length)
-    renderPokemonListInView(searchList);
-  }else if(text.value.length === 0 ){ // is empty
-      loadAllPokemon();    
-  }
-}
+//variable para utilizar con el filtro
+const text = document.getElementById("searchPokemon");
 
-//función de ordenar
-function sortPokemonBy(){
-    const click = document.getElementById("sortPokemon");
-    if (click > 0){
-        
-    }
-}
+
+//variable para utilizarla con la función ordenar
+const submit = document.getElementById("myCheck");
+/*submit.addEventListener("click",sortPokemonBy(){
+  document.getElementById("").innerHTML=""
+
+}*/
+
 
 //función que carga la lista de todos los pokemones
 function renderPokemonListInView(allPokemon){
