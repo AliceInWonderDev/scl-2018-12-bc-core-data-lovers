@@ -11,10 +11,18 @@ const text = document.getElementById("searchPokemon");
 
 //variable para utilizarla con la función ordenar
 const submit = document.getElementById("myCheck");
-/*submit.addEventListener("click",sortPokemonBy(){
-  document.getElementById("").innerHTML=""
+submit.addEventListener("click",()=>{
+  let sortBy = "name"
+  let sortOrder = "asc"
+  let data = pokemon["pokemon"]
+  let result = sortPokemonBy(data, sortBy, sortOrder)
 
-}*/
+  
+
+  });
+
+
+
 
 
 //función que carga la lista de todos los pokemones
