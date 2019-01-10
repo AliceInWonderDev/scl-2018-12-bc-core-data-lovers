@@ -3,38 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>INICIO</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link type="image/x-icon" rel="icon" href="favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div>
-        <h1>POKEFAN LOVERS</h1>
-        <div id="header">
-          <ul class="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pokebusqueda.html">PokeBusqueda</a></li>
-            <li><a href="poketube.html">PokeTube</a></li>
-            <li><a href="funfacts.html">PokeDatos</a></li>
-          </ul>
-        </div>
-      </div> 
-      <br>
-      <br>
-      <br>
-      <div>
+      <div class="container-fluid">
+          <div class="container">
+             <div class="row titulo">
+                <div class="col">
+                   <h1>POKEFAN LOVERS</h1>
+                </div>
+             </div>
+             <div id="header">
+                <div class="row nav">
+                   <div class="col"><a href="inicio.html">Inicio</a></div>
+                   <div class="col"><a href="pokebusqueda.html">PokeBusqueda</a></div>
+                   <div class="col"><a href="poketube.html">PokeTube</a></div>
+                   <div class="col"><a href="funfacts.html">Pokedatos</a></div>
+                </div>
+             </div>
+          </div>
+          <div class="row phrase">
+              <div class="col-12">
           <p>En ésta sección encontrarás todo lo nuevo del mundo Pokemón</p>
-      </div>
-      
-      <div>
-        <p>El Pokemón del día es:</p>
-        <img id = "poke-of-the-day" src="Charizard.jpg"></img>
-      </div>
-
-      <div>
-        <p>Últimas noticias del mundo Pokemón: Pikachu tendrá su propia película en la que actuará como detective</p>
-        <img src="Detective-Pikachu.jpg" class="giphy-embed"></img>   
-      </div>
-
-    </body>
+        </div>
+        </div>
+    <section>
+          <div class="row one">
+            <div class="col-5">
+            <p>El Pokemón del día es:</p>
+        </section>
+        <section>
+            <div class="col-12">
+            <iframe src="https://giphy.com/embed/QzxONYL3xbj6E" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+            </div>
+          </div>
+          <div class="row final">
+            <p>Últimas noticias del mundo Pokemón: Pikachu tendrá su propia película en la que actuará como detective</p>
+            <img src="Detective-Pikachu.jpg" class="giphy-embed"></img>   
+          </div>
+    </section>
+  </div>
+</body>
 </html>
