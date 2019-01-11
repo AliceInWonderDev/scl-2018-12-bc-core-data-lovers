@@ -20,31 +20,50 @@ submit.addEventListener("click",()=>{
   });
 
 //para mostrar tarjetas con bootstrap
-const card = "";
-const containterRoot = document.getElementById("root");
-
-const showData = (data) =>{
-  
-  data.forEach(element => {
-  card = containterRoot.innerHTML += `
-  <div class="row">
-    <div class="card col-4">
-      <div class="box">
-        <div class="img">
-            <img src="${element.img}">
-        </div>
-        <h2>${element.name}</h2>
-        <p>${element.type}</p>
-      </div>
-    </div>
-  </div>`
-  });
-  console.log("hola");
-  return card;
-};
-showData(data)
 
 //función que carga la lista de todos los pokemones
+function renderPokemonListInView( allPokemon ){
+  //para agarrar el calculo
+  let finalValue = `
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <span class="counterStyle"> Pokemons encontrados: ${allPokemon.length}</span>
+      </div>
+    </div>
+  </div>
+  `
+  document.getElementById("pokeCounter").innerHTML = finalValue
+
+  let pokemonItem = "";
+  let containterRoot = document.getElementById("pokemonList");
+
+  containterRoot.innerHTML= "";
+
+  allPokemon.forEach( element => {
+    pokemonItem += `
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="img">
+                <img src="${element.img}">
+            </div>
+            <span class="cardNum">${element.num}</span>
+            <h2 class="cardName">${element.name}</h2>
+            <p class="cardType">Tipo: ${element.type}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    `
+  });
+  containterRoot.innerHTML = pokemonItem
+
+}
+
+/*
 function renderPokemonListInView(allPokemon){
   let pokemonListContainer = document.getElementById("pokemonList");
   pokemonListContainer.innerHTML= "";
@@ -95,6 +114,8 @@ let pokemonType = document.createElement("span");
 
 };
 
+*/
+
 /*/Weaknesses
 let pokemonWeaknesses = pokemon.weaknesses
 for (i = 0; i < pokemonWeaknesses.length; i++){
@@ -113,29 +134,4 @@ function createClear() {
   clear.className = "clear"
   return clear
 }
-
-//charts
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-
 
