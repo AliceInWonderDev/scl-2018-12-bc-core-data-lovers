@@ -33,10 +33,10 @@ let containterRoot = document.getElementById("pokemonList");
 containterRoot.innerHTML= "";
 allPokemon.forEach( element => {
 pokemonItem += `
-<div class="row">
-   <div class="col-3">
-      <div class="card">
-         <div class="box">
+
+   <div class="col-sm-12 col-md-6 col-xl-3 col-lg-3">
+      <div class="card" >
+         <div class="card-body">
             <div class="img">
                <img src="${element.img}">
             </div>
@@ -46,7 +46,6 @@ pokemonItem += `
          </div>
       </div>
    </div>
-</div>
 </div>
 `
 });
