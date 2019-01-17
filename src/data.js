@@ -1,13 +1,14 @@
+
+//Función de filtro
 function searchPokemonByName(){
   if( text.value.length > 0 ){
-    //Aplicamos un filtro con una condición para crear un nuevo array
-    const searchList = pokemon["pokemon"].filter(
+    const searchList = pokemon["pokemon"].filter( //filtramos la data
         pokemon => 
         pokemon.name.toUpperCase().includes(text.value.toUpperCase()) || 
         pokemon.num.includes(text.value) 
     ); 
-    
     renderPokemonListInView(searchList);
+
   }else if(text.value.length === 0 ){ // is empty
       loadAllPokemon();    
   }
