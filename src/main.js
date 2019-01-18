@@ -1,16 +1,31 @@
 window.loadAllPokemon()
 function loadAllPokemon(){
 const allPokemon = pokemon["pokemon"];
-
 //Con el render puedo mostrar la lista de todos los Pokémons
 renderPokemonListInView(allPokemon);
 }
+
+/*/Fetch con el json
+const jsonDoc = ".../data/pokemon/pokemon.json";
+let pokeJson = "";
+fetch(jsonDoc)
+  .then(response => response.json())
+  .then(jsonData =>{
+     initialWindow(jsonData);
+     return pokeJson = jsonData
+   //for( let pokemon in allPokemon.allPokemon){
+     // window.loadAllPokemon.push(allPokemon.allPokemon[pokemon]);
+  })
+   .catch(error => {
+      mainBox.innerHTML = "Error: " + error;
+});
+*/
 
 //variable para utilizar con el filtro
 const text = document.getElementById("searchPokemon");
 
 //variable para utilizarla con la función ordenar
-const submit = document.getElementById("myCheck");
+const submit = document.getElementById("myCheck")
 
 //agregué un addEventListener para que al hacer clic en el boton de a-z pudiera ejecutarse y mostrarse lo solicitado
 submit.addEventListener("click",()=>{
@@ -22,6 +37,9 @@ renderPokemonListInView(result)
 });
 
 //función que carga la lista de todos los pokemones
+// CON JSON const initialWindow = (pokeJson) => {
+//const data = pokeJson.pokemon;
+
 function renderPokemonListInView( allPokemon ){
 
 //para mostrar el calculo
@@ -63,16 +81,3 @@ containterRoot.innerHTML = pokemonItem
 }
 
 
-/*/Fetch con el json
-
-const jsonDoc = "./data/pokemon/pokemon.json";
-let pokeJson = "";
-fetch(jsonDoc)
-  .then(response => response.json())
-  .then(jsonData =>{
-   windowStart(jsonData);
-   return pokeJson = jsonData;
-  })
-   .catch(error => {
-      mainBox.innerHTML = "Error: " + error;
-});*/

@@ -5,6 +5,12 @@
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     text-align: center;
 }
+p, .counterStyle, .cardName, .navbar{
+    font-family: "Dokdo", cursive;
+    color: white;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: center;
+}
 .titulo h1{
     font-size: 8vh;
     font-size: 8vw;
@@ -13,8 +19,8 @@ p {
     font-size: 25px; 
 }
 .counterStyle, .cardName{
-    font-size: 2vh;
-    font-size: 2vw;
+    font-size: 1.5vh;
+    font-size: 1.5vw;
 }
 .cardNum{
     font-family: "Dokdo", cursive;
@@ -46,7 +52,8 @@ body{
     background-blend-mode: soft-light;
     margin: 0;
     padding: 0;
-
+    filter: blur(1);
+  background-color: rgba(10, 10, 10, 0.575);
   
 }
 .one{
@@ -72,22 +79,6 @@ a:hover{
     background-color: gray;
 }
 
-.button1, .button2{
-    padding: 7px 20px;
-    display: inline;
-    font-size: 1.5vw;
-    text-align: center;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    display: block;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left:auto;
-    margin-right: auto;
-    width: 450px;   
-}
 .phrase{
     margin: auto;
     padding: 10px;
