@@ -8,7 +8,7 @@ function searchPokemonByName(){
         pokemon.num.includes(text.value) 
     ); 
     renderPokemonListInView(searchList);
-    console.log(renderPokemonListInView(searchList));
+
   }else if(text.value.length === 0 ){ // is empty
       loadAllPokemon();    
   }
