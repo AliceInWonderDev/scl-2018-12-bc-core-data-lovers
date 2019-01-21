@@ -70,11 +70,11 @@ pokemonItem += `
       <h2 class="cardName">${element.name}</h2>
    </div>
 
-   <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+   <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter${element.id}">
       Más Información
    </button>
    
-   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal fade" id="exampleModalCenter${element.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
          <div class="modal-content">   
             <div class="modal-header">
@@ -83,23 +83,29 @@ pokemonItem += `
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-   
+            
             <div class="modal-body">
-               <p class="cardType">Tipo: ${element.type}</p>
+            <div>
+               <p class="cardType">Tipo: </p>
+               <span>${element.type}</span>
             </div>
-            <div class="modal-body">
-               <p class="cardType">Debilidad: ${element.weaknesses}</p>
+            <div>
+               <p class="cardType"> Debilidad: </p>
+               <span>${element.weaknesses}</span>
             </div>
-            <div class="modal-body">
-               <p class="cardType">Altura: ${element.height}</p>
+            <div>
+               <p class="cardType">Altura: </p>
+               <span>${element.height}</span>
             </div>
-            <div class="modal-body">
-               <p class="cardType">Peso: ${element.weight}</p>
+            <div>
+               <p class="cardType">Peso: </p>
+               <span>${element.weight}</span>
             </div>
-            <div class="modal-footer">
+            
+            <div class="card-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
-   
+            </div>
          </div>
       </div>
    </div>
