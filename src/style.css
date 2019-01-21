@@ -1,12 +1,16 @@
 
-.titulo h1, p, .counterStyle, .cardName, .navbar, .cardType{
+p, .counterStyle, .cardName, .navbar, .cardType{
     font-family: "Dokdo", cursive;
-    color: yellow;
+    color: white;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     text-align: center;
 }
 
 .titulo h1{
+    font-family: "Dokdo", cursive;
+    color:yellow;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: center;
     font-size: 8vh;
     font-size: 8vw;
 }
